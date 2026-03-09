@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "title": "Forest Focus",
+    "tag": "Focus",
+    "duration_minutes": 10,
+    "thumbnail_url": "assets/images/forest.jpg",
+    "description": "Deep woodland ambiance to help you lock into deep work.",
+    "sensory_chips": ["Breeze", "Soft Rain", "Woodland"]
+  },
+  {
+    "id": "2",
+    "title": "Ocean Reset",
+    "tag": "Reset",
+    "duration_minutes": 10,
+    "thumbnail_url": "assets/images/ocean.jpg",
+    "description": "Crashing waves to wash away mental fatigue.",
+    "sensory_chips": ["Waves", "Binaural", "Mist"]
+  },
+  {
+    "id": "3",
+    "title": "Cabin Sleep",
+    "tag": "Sleep",
+    "duration_minutes": 10,
+    "thumbnail_url": "assets/images/cabin.jpg",
+    "description": "Crackling fire and warm tones for deep rest.",
+    "sensory_chips": ["Warm Light", "Fire crackle", "Heavy Rain"]
+  },
+  {
+    "id": "4",
+    "title": "Morning Calm",
+    "tag": "Calm",
+    "duration_minutes": 10,
+    "thumbnail_url": "assets/images/morning.jpg",
+    "description": "Gentle morning birds and light wind to start the day.",
+    "sensory_chips": ["Birds", "Warm Light", "Breeze"]
+  },
+  {
+    "id": "5",
+    "title": "Library Focus",
+    "tag": "Focus",
+    "duration_minutes": 10,
+    "thumbnail_url": "assets/images/library.jpg",
+    "description": "Subtle page turns and distant rain for studying.",
+    "sensory_chips": ["Soft Rain", "Pages", "White Noise"]
+  },
+  {
+    "id": "6",
+    "title": "Midnight Sleep",
+    "tag": "Sleep",
+    "duration_minutes": 10,
+    "thumbnail_url": "assets/images/midnight.jpg",
+    "description": "Deep ambient drones and distant thunder.",
+    "sensory_chips": ["Thunder", "Binaural", "Darkness"]
+  }
+]
