@@ -207,11 +207,41 @@ class _SessionPlayerScreenState extends ConsumerState<SessionPlayerScreen> with 
                   ),
                   const SizedBox(height: 60),
 
-                  // End Session Button
-                  TextButton(
-                    onPressed: _showEndSessionDialog,
-                    child: const Text('End Session', style: TextStyle(color: Colors.white54, fontSize: 16)),
-                  ),
+                 // End Session Button
+TextButton(
+  onPressed: () {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('End Session?'), // [cite: 92]
+        content: const Text('Are you sure you want to end your immersive session?'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Cancel'), // [cite: 93]
+          ),
+          TextButton(
+            onPressed: () {
+              // 1. STOP THE SOUND IMMEDIATELY
+              ref.read(sessionProvider.notifier).stopSession(); 
+
+              // 2. Navigate to Reflection Screen [cite: 95]
+              Navigator.pushAndRemoveUntil(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ReflectionScreen(ambience: ambience),
+                ),
+                (route) => route.isFirst, 
+              );
+            },
+            child: const Text('End', style: TextStyle(color: Colors.red)), // [cite: 94]
+          ),
+        ],
+      ),
+    );
+  },
+  child: const Text('End Session', style: TextStyle(color: Colors.redAccent)), // THIS WAS MISSING
+),
                 ],
               ),
             ),
