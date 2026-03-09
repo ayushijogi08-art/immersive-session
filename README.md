@@ -23,3 +23,13 @@ Given the 8-hour timebox:
 - **Audio Assets:** I used local placeholders. In a production app, these would be streamed from a CDN to reduce APK size.
 - **Error Handling:** Basic error builders are implemented for assets; a more robust system using "Either" types from the Dartz package would be used in a larger project.
 - **Testing:** Unit tests for the SessionController logic would be the next priority.
+
+## Technical Choices
+- **just_audio**: Used for high-fidelity audio looping and seamless seek functionality.
+- **Hive**: Chosen for persistence due to its high performance and NoSQL flexibility for journal entries.
+
+## Future Improvements
+Given more time, I would implement:
+- Unit tests for the SessionController.
+- App lifecycle handling to pause audio when the app backgrounded.
+- Streamed audio assets to minimize the initial APK size.
